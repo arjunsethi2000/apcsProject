@@ -17,7 +17,7 @@ public class Main {
 	//Maze game created by Kevin George
 	//APCS 2016 bois
 	
-	JFrame Window = new JFrame("Maze");
+	JFrame Window = new JFrame("Mazeeee");
     JButton Begin = new JButton("Play");
     JButton Exit = new JButton("Exit");   
     ArrayList<String> map = new ArrayList<String>();
