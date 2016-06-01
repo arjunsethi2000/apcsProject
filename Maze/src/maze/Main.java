@@ -21,11 +21,11 @@ public class Main {
     JButton Begin = new JButton("Play");
     JButton Exit = new JButton("Exit");   
     ArrayList<String> map = new ArrayList<String>();
-    int WindowWidth = 00; //Width of each button/item on display
-    int WindowHeight = 50;//Height of each button/item on display
-    int WindowY = 500; //Button/item location on display
-    int width = 500;
-    int height = 500;
+    int WindowWidth = 100; //Width of each button/item on display
+    int WindowHeight = 25;//Height of each button/item on display
+    int WindowY = 460; //Button/item location on display
+    int width = 490;
+    int height = 530;
 	
 	public Main(){
 		Window.setResizable(false);
@@ -35,14 +35,18 @@ public class Main {
         Window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Begin.setSize(WindowWidth,WindowHeight);
         Begin.setLocation(10, WindowY);
+        Exit.setLocation(WindowY-10, 10);
         Window.add(Begin);
+        Window.add(Exit);
         Window.setVisible(true);
+        
         Begin.addActionListener(new ActionListener(){
 
         	@Override
 			public void actionPerformed(ActionEvent arg0) {
 				
 				Window.setVisible(true);
+				
 			}
         	
         });	
